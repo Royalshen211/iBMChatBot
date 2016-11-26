@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: iBMChatBot
+  host: iBMChatBot
+  disk_quota: 1024M
+  services:
+  - Conversation-dm
+  - Speech to Text-bb
+  - Text to Speech-1t
